@@ -16,6 +16,14 @@
     "typecheck": {
       "executor": "nx:run-commands",
       "options": { "command": "tsc -p apps/web-property/tsconfig.app.json --noEmit" }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": { "command": "jest --config apps/web-property/jest.config.js" }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": { "command": "eslint apps/web-property" }
     }
   }
 }

@@ -10,9 +10,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "types": ["vite/client"],
-    "baseUrl": ".",
     "paths": {
-      "@genio/ui": ["libs/ui/src/index.ts"]
+      "@genio/ui": ["./libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

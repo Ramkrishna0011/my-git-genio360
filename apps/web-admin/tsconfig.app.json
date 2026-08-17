@@ -1,5 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": { "noEmit": true },
-  "include": ["src", "../../libs/ui/src"]
+  "include": ["src", "../../libs/ui/src"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
 }
