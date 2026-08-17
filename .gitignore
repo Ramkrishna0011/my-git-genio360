@@ -1,0 +1,17 @@
+node_modules/
+dist/
+tmp/
+out-tsc/
+*.tsbuildinfo
+
+.nx/cache
+.nx/workspace-data
+
+.env
+.env.*
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

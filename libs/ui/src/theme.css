@@ -1,0 +1,53 @@
+/* Genio360 design system — tokens + base component styles (@genio/ui). */
+:root {
+  --gx-navy: #0b2440;
+  --gx-navy-700: #16324f;
+  --gx-gold: #b6975b;
+  --gx-gold-600: #9c7f45;
+  --gx-ink: #1c2733;
+  --gx-grey: #5b6572;
+  --gx-line: #d8dee6;
+  --gx-bg: #f6f8fa;
+  --gx-danger: #c0392b;
+  --gx-radius: 10px;
+  --gx-radius-sm: 6px;
+  --gx-font-heading: 'Zilla Slab', Georgia, serif;
+  --gx-font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --gx-shadow: 0 6px 24px rgba(11, 36, 64, 0.08);
+}
+
+/* Brand */
+.gx-brand { display: inline-flex; align-items: center; gap: 6px; font-family: var(--gx-font-heading); font-weight: 700; letter-spacing: .5px; }
+.gx-brand__word { color: var(--gx-gold); font-size: 22px; }
+.gx-brand__360 { color: var(--gx-gold); font-size: 13px; border: 2px solid var(--gx-gold); border-radius: 50%; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; letter-spacing: 0; }
+.gx-brand__divider { width: 1px; height: 20px; background: var(--gx-gold); opacity: .45; margin: 0 8px; }
+.gx-brand__suite { color: var(--gx-gold); opacity: .85; font-size: 12px; letter-spacing: 3px; font-family: var(--gx-font-body); }
+.gx-brand--sm .gx-brand__word { font-size: 18px; }
+.gx-brand--sm .gx-brand__360 { font-size: 11px; width: 24px; height: 24px; }
+
+/* Field trailing (e.g. password show/hide) */
+.gx-field__trailing { display: inline-flex; align-items: center; color: var(--gx-grey); }
+.gx-field__trailing button { background: none; border: 0; padding: 0; margin: 0; color: inherit; cursor: pointer; display: inline-flex; }
+
+/* Card */
+.gx-card { background: #fff; border: 1px solid var(--gx-line); border-radius: var(--gx-radius); box-shadow: var(--gx-shadow); padding: 28px; }
+.gx-card__title { font-family: var(--gx-font-heading); color: var(--gx-navy); font-size: 20px; margin: 0 0 12px; }
+
+/* Button */
+.gx-btn { font-family: var(--gx-font-body); font-weight: 600; font-size: 14px; border-radius: var(--gx-radius-sm); padding: 10px 18px; border: 1px solid transparent; cursor: pointer; transition: background .15s, border-color .15s, opacity .15s; }
+.gx-btn:disabled { opacity: .55; cursor: not-allowed; }
+.gx-btn--block { display: block; width: 100%; }
+.gx-btn--primary { background: var(--gx-gold); color: #fff; }
+.gx-btn--primary:hover:not(:disabled) { background: var(--gx-gold-600); }
+.gx-btn--ghost { background: transparent; color: var(--gx-navy); border-color: var(--gx-line); }
+.gx-btn--ghost:hover:not(:disabled) { border-color: var(--gx-navy); }
+
+/* Input / field */
+.gx-field { display: flex; flex-direction: column; gap: 6px; font-family: var(--gx-font-body); margin-bottom: 14px; }
+.gx-field__label { font-size: 13px; font-weight: 600; color: var(--gx-ink); }
+.gx-field__control { display: flex; align-items: center; gap: 8px; border: 1px solid var(--gx-line); border-radius: var(--gx-radius-sm); padding: 0 12px; background: #fff; }
+.gx-field__control:focus-within { border-color: var(--gx-gold); box-shadow: 0 0 0 3px rgba(182,151,91,.15); }
+.gx-field__control.is-error { border-color: var(--gx-danger); }
+.gx-field__icon { color: var(--gx-grey); display: inline-flex; }
+.gx-input { flex: 1; border: 0; outline: 0; padding: 11px 0; font-size: 14px; color: var(--gx-ink); background: transparent; font-family: var(--gx-font-body); }
+.gx-field__error { font-size: 12px; color: var(--gx-danger); }
